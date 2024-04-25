@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+background-color:rgb(84, 195, 217);
+}
+.container{
+    width: 80%;
+    margin:100px auto;
+    text-align: center;
+}
+h2,h3{
+    font-size: 30px;
+    margin: 20px 10px;
+    color: rgb(253, 255, 240);
+
+}
+
+#temp{
+ width: 50%;
+ height: 40px;
+ padding: 8px;
+ font-size: 20px;
+ border-radius: 10px;
+}
+@media (max-width :700px) {
+    
+    .container{
+        width: 100%;
+
+    }
+    #temp{
+        width: 80%;
+    }
+
+    }
