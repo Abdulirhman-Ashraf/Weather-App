@@ -3,12 +3,12 @@ let apiKey = "5e950be15af49b475695991a409bc6aa";
 async function get(city) {
   if (city != "") {
     const response = await fetch(
-      `${apiBase}${city}&appid=${apiKey}&lang=PT&units=metric`
+      `${apiBase}${city}&appid=${apiKey}&lang=en&units=metric`
     );
     const data = await response.json();
     console.log(data);
     let c = data.main["temp"];
-    let cloud = data.weather[0].main;
+    let cloud = data.weather[0].description;
     let icon = data.weather[0].icon;
     let icons = `https://openweathermap.org/img/wn/${icon}@2x.png`;
     document.querySelector(
@@ -17,3 +17,4 @@ async function get(city) {
   } else {
   }
 }
+
